@@ -8,4 +8,10 @@ public class MethodsParse {
         public static JsonArray getJsonArrayFromResponse(Response res){
         return parseString(res.getBody().asString()).getAsJsonArray();
     }
+    public static String getMessageFromJson(Response res){
+          return   parseString(res.getBody().asString())
+                  .getAsJsonObject()
+                  .get("message")
+                  .getAsString();
+    }
 }

@@ -11,55 +11,63 @@
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
+        <jupiter-params.version>5.7.1</jupiter-params.version>
+        <jupiter-engine.version>5.7.1</jupiter-engine.version>
+        <jupiter-api.version>5.7.1</jupiter-api.version>
+        <junit-platform.version>1.7.0</junit-platform.version>
+        <jackson.version>2.12.4</jackson.version>
+        <json-schema.version>4.4.0</json-schema.version>
+        <rest-assured.version>4.4.0</rest-assured.version>
+        <gson.version>2.8.8</gson.version>
     </properties>
     <dependencies>
 
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-params</artifactId>
-        <version>5.7.1</version>
+        <version>${jupiter-params.version}</version>
         <scope>test</scope>
     </dependency>
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-engine</artifactId>
-        <version>5.7.1</version>
+        <version>${jupiter-engine.version}</version>
         <scope>test</scope>
     </dependency>
 
     <dependency>
         <groupId>org.junit.jupiter</groupId>
         <artifactId>junit-jupiter-api</artifactId>
-        <version>5.7.1</version>
+        <version>${jupiter-api.version}</version>
         <scope>test</scope>
     </dependency>
     <dependency>
         <groupId>org.junit.platform</groupId>
         <artifactId>junit-platform-launcher</artifactId>
-        <version>1.7.0</version>
+        <version>${junit-platform.version}</version>
         <scope>test</scope>
     </dependency>
 
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.12.4</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>json-schema-validator</artifactId>
-            <version>4.4.0</version>
+            <version>${json-schema.version}</version>
         </dependency>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.4.0</version>
+            <version>${rest-assured.version}</version>
             <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
-            <version>2.8.8</version>
+            <version>${gson.version}</version>
         </dependency>
 
 

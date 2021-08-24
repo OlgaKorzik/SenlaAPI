@@ -37,6 +37,7 @@ public class SetRequest {
         response = given()
                 .spec(requestSpecification)
                 .when()
+                .header("api_key",DataForTest.getIdPetForPutTest())
                 .delete(url);
         return response;
     }
